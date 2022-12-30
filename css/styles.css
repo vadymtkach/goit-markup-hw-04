@@ -128,12 +128,45 @@ button{
 
 
 .hero{
-    background-color: var(--navy-blue);
+   
+    
+    max-width: 1440px;
+    
+    margin-right: auto;
+    margin-left: auto;
+    background-image:linear-gradient(to right, rgba(47, 48, 57, 0.8),
+    rgba(47, 48, 57, 0.8) ), url(../images/bg-hero.jpg);
+   
+    
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
     text-align: center;
 
     padding-top: 192px;
     padding-bottom: 192px;
+    
+    
+
 }
+.list-image{
+    width: 264px;
+    height: 112px;
+
+    background-color: #F4F4FD;
+    border-radius: 4px;
+}
+.list-image-svg{
+    width: 60px;
+    height: 64px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: 102px;
+    margin-right: 102px;
+}
+
 .our-mission{
     padding-top: 120px;
     padding-bottom: 120px;
@@ -318,6 +351,7 @@ button{
     margin-right: 24px;
     flex-basis: calc(100% / 4 );
 }
+
 .list-item:last-child{
     margin-right: 0;
 }
@@ -386,6 +420,8 @@ button{
     
     
 }
+
+
 .card-name{
     margin-bottom: 8px;
 }
@@ -402,11 +438,14 @@ button{
     border-radius: 0px 0px 4px 4px;
 
     flex-direction: column;
+
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
     
 }
 .team-content{
     padding-top: 32px;
-    padding-bottom: 32px;
+    padding-bottom: 8px;
     padding-right: 16px;
     padding-left: 16px;
     text-align: center;
@@ -424,6 +463,42 @@ button{
 
     padding-top: 120px;
     padding-bottom: 120px;
+}
+.team-link{
+    padding-bottom: 32px;
+    margin: 0;
+}
+.team-link-set{
+    display: flex;
+    justify-content: center;
+}
+.team-link-actions{
+    margin-right: 24px;
+}
+.team-link-actions:last-child{
+    margin-right: 0;
+}
+.team-link-list{
+    width: 40px;
+    height: 40px;
+
+    display: block;
+    background-color: var(--primary-brand);
+    border-radius: 50%;
+    
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    
+}
+.team-link-list:hover{
+    background-color: #404BBF;
+}
+.team-link-item{
+    width: 16px;
+    height: 16px;
+    
 }
 
 .project-cards{
@@ -446,10 +521,60 @@ button{
 
     margin-right: 24px;
     margin-bottom: 48px;
+
+   
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+    
+}
+.actions-customers{
+    display: flex;
+    margin-bottom: 120px;
+    
+}
+.customers-item{
+    margin-right: 24px;
+}
+.customers-item:last-child{
+    margin-right: 0;
+}
+.customers-link{
+    display: block;
+    width: 168px;
+    height: 88px;
+   
+    padding: 0;
     
 
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+
+    background-color: #fff;
+
+ 
+
     
+}
+
+.customers-icon{
+    width: 104px;
+    height: 56px;
     
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 32px;
+    margin-right: 32px;
+ 
+}
+.custom{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+
+    margin-bottom: 72px;
+    margin-top: 130px;
+   
+    text-align: center; 
 }
 
 
@@ -472,22 +597,84 @@ footer{
     background-color: var(--navy-blue);
 
     padding-top: 100px;
-    display: block;
+    display: flex;
     
     padding-bottom: 100px;
+
+    
     
    
     
 
     
 }
+.footer-media{
+    display: flex;
+}
+
 .footer-text{
     color: var(--accent-cornflower);
 
     
     display: block;
     width: 264px;
+    
+}
+.footer-link-actions{
+    margin-top: 16px;
+}
+.social{
+    position: absolute;
+    width: 208px;
+    height: 80px;
+    left: 540px;
+    
+    margin-left: 120px;
+    
+}
+.footer-link-set{
+   
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    
+    
+
 }
 
+.footer-link-list{
+    width: 40px;
+    height: 40px;
 
+    display: block;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.footer-link-list:hover{
+    background-color: #31D0AA;
+}
+.footer-link-item{
+    width: 24px;
+    height: 24px;
+}
+.footer-social-text{
+    color: var(--accent-cornflower);
+    
+    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    
+   
+
+    
+}
 
